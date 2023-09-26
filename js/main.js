@@ -14,9 +14,10 @@ function getSound(id) {
     return audio;
 };
 
-const button = document.querySelector("button");
 
 /*
+const button = document.querySelector("button");
+
 button.onclick = (e) => {
     console.log("ei caralho");
 };
