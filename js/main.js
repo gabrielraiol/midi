@@ -21,7 +21,7 @@ while (contador < teclas.length) {
 
     let tecla = teclas[contador];
     tecla.onclick = () => {
-        let audio = getSound(tecla.id);
+        const audio = getSound(tecla.id);
         if (audio.paused) {
             audio.play();
         } else {
@@ -33,6 +33,7 @@ while (contador < teclas.length) {
 */
 
 function getSound(id) {
+    // template string
     const soundId = `#som_${id}`;
     let audio = document.querySelector(soundId);
     return audio;
